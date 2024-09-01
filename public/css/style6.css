@@ -1,0 +1,422 @@
+@font-face{
+    font-family: ab;
+    src: url(../assets/Rejouice-Headline.woff2);
+  }
+  @font-face{
+    font-family: pq;
+    src: url(../assets/NBInternationalProBoo.woff2);
+  }
+  @font-face{
+    font-family: qw;
+    src: url(../assets/MonumentExtended-Regular.otf);
+  }
+  html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  body
+  {
+    margin:0;
+    padding: 0;
+  }
+  #main{
+    background-color:whitesmoke;
+  }
+  #cursor{
+    pointer-events: none;
+    position:absolute;
+    top:0;
+    left:0;
+    height:5vh;
+    width:5vh;
+    border-radius: 50%;
+    font-size: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: xy;
+    background-color:#FFEA00;
+    transform: translate(-50%,-50%);
+    mix-blend-mode: difference;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s, background-image ease 0.3s;
+    z-index: 999999999999 !important;
+  }
+  #nav{
+    height:5.6vw;
+    width:70vw;
+    background-color: rgb(169,169,169,0.6);
+   
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top:1.5vw;
+    margin-left: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2vw;
+    border-radius: 15px;
+    z-index: 99999999;
+  }
+  #nav-left img
+  {
+  height:4.5vw;
+    width:18vw;
+    object-fit: cover;
+  }
+  #nav-right{
+    color:#0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:33vw;
+    font-size:1.0vw;
+    font-family: qw;
+    }
+  #nav-right a{
+    text-decoration: none;
+    color:#0D0D0D;
+  }
+  #page1{
+    height:100vh;
+    width:100vw;
+    background-color: whitesmoke;
+    padding-top: 10vw;
+  }
+  #page16
+  {
+    height:60vh;
+    width:100vw;
+    background-color: whitesmoke;
+    padding-top: 10vw;
+  }
+  #p1txt
+  {
+    font-family: qw;
+    font-size:2vw;
+    margin-left: 2vw;
+  }
+  #addnew{
+    margin-left: 2vw;
+    font-family: qw;
+  }
+  #bookId
+  {
+    font-family: qw;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    color:rgb(255, 215, 0);
+  }
+  #price,#publishYear,#title,#author
+  {
+    font-family: qw;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    color:rgb(255, 215, 0);
+  }
+   #esubmit{
+    font-family: pq;
+    font-size: 1.2vw;
+    font-weight: 600;
+    background-color:  rgb(255, 215, 0);
+    color: #0D0D0D;
+    border: none;
+    border-radius: 5px;
+    padding: 1vh 2vw;
+    cursor: pointer;
+   
+  }
+  #book-cards{
+    height: 75vh;
+    width:100%;
+    
+  }
+  #card1{
+    height: 70vh;
+    width:100%;
+    border:4px solid rgb(255, 215, 0);
+    margin: 0 1vw;
+    background-color: transparent;
+    }
+    #card1 a{
+      text-decoration: none;
+      color:rgb(255, 215, 0);
+    }
+    #card1 #icon{
+      color:red;
+    }
+    #ctop{
+      height:12vh;
+      width:100%;
+      display: flex;
+      align-items: center;
+      font-family: qw;
+      justify-content: center;
+      font-size: 1.1vw;
+      color:rgb(255, 215, 0);
+      }
+    #cmid{
+      height:30vh;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #cmid h3{
+      margin:0;
+      font-family: qw;
+      font-size: 2.5vw;
+      color:rgb(255, 215, 0);
+    }
+    #cmid2
+    {
+      height:20vh;
+      width:100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:rgb(255, 215, 0);
+      font-size: 2.1vw;
+      font-family: qw;
+    }
+    #cmid2 #space{
+      padding-left: 0px;
+       }
+    #cbot{
+      height:8vh;
+      width:100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 1vw;
+      color:rgb(255, 215, 0);
+      font-family: qw;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  #page1 #video
+  { 
+    height: 100vh;
+    width:100vw;
+    object-fit: cover;
+    overflow: hidden;
+    position:absolute;
+  }
+  #p1text
+  {  position:relative;
+    height:98vh;
+    width:96vw;
+    margin-left:1.5vw;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+  }
+  #p1t
+  {
+    height:49vh;
+    width:100vw;
+    overflow: hidden;
+    font-size: 9.5vw;
+   
+    
+    font-family: ab;  
+  }
+  #p1t h1
+  {
+    margin-top: 4vw;
+    margin-left: 1vw;
+  }
+  #p1t h1 span{
+    margin:0;
+    color:whitesmoke;
+    mix-blend-mode: difference;
+    font-weight: 900;
+    display: inline-block;
+  }
+  #addbook{
+    height:10vw;
+    width:25vw;
+    margin-left: 41vw;
+   
+    margin-top: 10vw;
+    font-family:  qw;
+    font-size: 3vw;
+  }
+  #addbook a{
+    text-decoration: none;
+    color:#0D0D0D;
+  }
+  #page2
+  {
+    min-height: 152vw;
+    width:100vw;
+    background-color: whitesmoke;
+    padding-top: 10vw;
+  }
+  #p2shead
+  {
+    height:4vh;
+    width:30vw;
+    font-size: 1.3vw;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    margin-bottom: 0.31vw;
+    margin-left: 39vw;
+  }
+  #p2head
+  {
+    margin: 0;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-family: pq;
+    background-color: rgb(255, 215, 0);
+  }
+  .content{
+    width:70%;
+    margin-left:20vw;
+    margin-top:7vw;
+  }
+  .container h1{
+    text-transform: uppercase;
+    color: #0D0D0D;
+    font-family: qw;
+    font-size: 2.5vw;
+    font-weight: 400;
+  }
+  
+  p{
+    font-family: ab;
+    font-size: 2.5vw;
+    color: #0D0D0D;
+  }
+  
+  
+  .container .img img{
+    height:40vw;
+    width:70vw;
+    object-fit: cover;
+   
+  }
+  
+  
+  #page3
+  {
+    height:78vh;
+    width:100vw;
+    display: flex;
+    align-items: flex-end;
+  }
+  #p3mo{
+    height:60vh;
+    width:100vw;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 75%, rgba(114,115,110,1) 98%);
+  }
+  #p3top
+  {
+    height:25vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #p3topl
+  {
+    height:25vh;
+    width:40vw;
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+    padding-top: 1vw;
+    overflow: hidden;
+  }
+  #p3topl h2{
+    color:#acaaaa;
+    font-family: pq;
+    margin:0;
+    font-size: 3.5vw;
+    
+    height:4.2vw
+  }
+  #line{
+    height:3.5px;
+    width:0vw;
+    margin-left:2vw;
+    margin-bottom: 3vw;
+    background-color: yellow;
+  }
+  #tright{
+    height:94%;
+    width:30%;
+    color:white;
+    font-size:2.5vh;
+    font-family: "Abel", sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #tf{
+    height:5vh;
+    width:16vw;
+    overflow: hidden;
+  
+  }
+  #tf h3{
+    width:16vw;
+    height:5vh;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:5vw;
+    text-decoration: none;
+    color:white;
+    
+  
+  }
+  #tf a{
+    text-decoration: none;
+  }
+  
+  #p3bot
+  {
+    height:50vh;
+    width:96%;
+   
+    margin-left:2vw;
+    color:#ded9d9;
+    font-size: 9.6vw;
+    font-family: ab;
+    
+    padding:0;
+    overflow:hidden;
+  }
+  #p3bot h1
+  {
+    margin: 0;
+    
+  }
+  #p3bot h1 span{
+     display: inline-block;
+  }
+  ._canvas_container{
+    z-index: 999999 !important;
+  }

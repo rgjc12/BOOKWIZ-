@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> BOOKWIZ*|Find Books</title>
+  <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" rel="stylesheet" />
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Archivo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+  <link href="./css/style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+      <div id="cursor"></div>
+    <div id="nav">
+      <div id="nav-left">
+        <img src="assets/bookwiz-high-resolution-logo-transparent.png" alt="logo" />
+      </div>
+      <div id="nav-right">
+        <a href="/"><h2>HOME</h2></a>
+        <a href="/allbooks"><h2>ALL BOOKS</h2></a>
+        <a href="/findbook"><h2>FIND BOOK</h2></a>     
+      </div>
+    </div>
+ 
+ 
+ <div id="main">
+   <div id="page16">
+    <div id="successMessage" class="message">
+      <% if (typeof message !== 'undefined') { %>
+        <%= message %>
+      <% } %>
+    </div>
+    <div id="p1txt"><h1>Enter Book-Id:</h1></div>
+    <form id="bookForm" method="post">
+        <input type="text" id="bookId" required>
+        <button id="esubmit" type="submit">Find Book</button>
+    </form>
+   </div>
+  
+   <div id="page3">
+     <div id="p3mo">
+       <div id="p3top">
+       <div id="p3topl">
+         <h2>Relax Sit Back,</h2>
+         <h2>You're in the Right Place!</h2>
+       </div>
+       
+         <div id="tright">
+             <div id="tf">
+               <a href="/addnew"><h3>Add Book→</h3></a>
+                <a href="/addnew"><h3>Add Book→</h3></a>
+               </div>
+          </div>
+         </div>
+       <div id="line"></div>
+       <div id="p3bot">
+          <h1><span>B</span><span>O</span><span>O</span><span>K</span><span>W</span><span>I</span><span>Z</span><span>*</span></h1>
+       </div>
+     </div>
+   </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+  
+   <script src="./js/script2.js"></script>
+  
+</body>
+
+</html>

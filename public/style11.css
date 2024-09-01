@@ -1,0 +1,171 @@
+@font-face{
+  font-family: ab;
+  src: url(./assets/Rejouice-Headline.woff2);
+}
+@font-face{
+  font-family: pq;
+  src: url(./assets/NBInternationalProBoo.woff2);
+}
+@font-face{
+  font-family: qw;
+  src: url(./assets/MonumentExtended-Regular.otf);
+}
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body
+{
+  margin:0;
+  padding: 0;
+}
+#main
+{
+  background-image: url(assets/books.jpg);
+}
+#cursor{
+  pointer-events: none;
+  position:absolute;
+  top:0;
+  left:0;
+  height:5vh;
+  width:5vh;
+  border-radius: 50%;
+  font-size: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: xy;
+  background-color:#FFEA00;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: difference;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s, background-image ease 0.3s;
+  z-index: 999999999999 !important;
+}
+#nav{
+  height:5.6vw;
+  width:70vw;
+  background-color: rgb(169,169,169,0.6);
+ 
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top:1.5vw;
+  margin-left: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2vw;
+  border-radius: 15px;
+  z-index: 99999999;
+}
+#nav-left img
+{
+height:4.5vw;
+  width:18vw;
+  object-fit: cover;
+}
+#nav-right{
+  color:#0D0D0D;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width:33vw;
+  font-size:1.0vw;
+  font-family: qw;
+  }
+#nav-right a{
+  text-decoration: none;
+  color:#0D0D0D;
+}
+#page1
+{
+  height:81vh;
+  width:100vw;
+  background-color: rgb(36, 31, 33,.5);
+  backdrop-filter:blur(10px);
+  padding-top: 19vh;
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 25vh;
+  overflow-x: hidden;
+  margin:0;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+}
+.content h1
+{
+  font-family: qw;
+  font-size: 4.5vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  color:transparent;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+#login-container
+{
+  height:71vh;
+  width:36vw;
+  background-color: rgba(255,255,255,0.23);
+  backdrop-filter: blur(10px);
+  border-radius:10px;
+  margin-left: 33vw;
+  padding: 2vw;
+
+}
+#name,#email,#password
+{
+  font-family: qw;
+  font-size: 1.2vw;
+  color:rgb(255, 215, 0);
+  margin: 0;
+}
+#txt
+{font-family: qw;
+  font-size:1.2vw;
+  margin: 0;
+}
+#top
+{
+  height:35vh;
+  width:100%;
+  color:rgb(255, 215, 0);
+  font-family: qw;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+}
+#form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#esubmit{
+  font-family: pq;
+  font-size: 1.2vw;
+  font-weight: 600;
+  background-color:  rgb(255, 215, 0);
+  color: #0D0D0D;
+  border: none;
+  border-radius: 5px;
+  padding: 1vh 2vw;
+  cursor: pointer;
+ 
+}
