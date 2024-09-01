@@ -80,9 +80,43 @@ app.get("/logout", (req, res) => {
 
 
 
-
-app.get("/",(req,res)=>{
+let f=1;
+app.get("/",async(req,res)=>{
    res.render("index.ejs");
+   if(f)
+   {
+   async function createBooks() {
+    try {
+      // Book 1
+      const book1 = new bookModel({
+        title: 'The Great Gatsby',
+        author: 'F. Scott Fitzgerald',
+        publishYear: 1925,
+        price: 10.99
+      });
+  
+      // Book 2
+      const book2 = new bookModel({
+        title: 'To Kill a Mockingbird',
+        author: 'Harper Lee',
+        publishYear: 1960,
+        price: 7.99
+      });
+  
+      // Save both books
+      await book1.save();
+      await book2.save();
+  
+      
+    } catch (error) {
+      console.error('Error creating books:', error.message);
+    }
+  }
+  
+  // Run the function
+  createBooks();
+}
+f=0;
 
  });
  app.get("/allbooks",async(req,res)=>{
